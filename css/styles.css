@@ -1,0 +1,31 @@
+/* Flex-footer */
+html,body{height:100%}
+body{display:flex;flex-direction:column;min-height:100vh}
+footer{margin-top:auto}
+
+/* Általános UI */
+.navbar-logo{height:48px;width:auto;object-fit:contain}
+@media(max-width:768px){.navbar-logo{height:32px}}
+
+.car-card{transition:transform .2s ease,box-shadow .2s ease}
+.car-card:hover{transform:translateY(-4px);box-shadow:0 0.5rem 1rem rgba(0,0,0,.15)}
+
+.color-swatch{cursor:pointer;width:32px;height:32px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #ccc}
+.color-swatch.selected{box-shadow:0 0 0 2px #000}
+
+.tinted-image{transition:filter .3s ease}
+.tint-red{filter:grayscale(1) sepia(1) hue-rotate(-10deg) saturate(6) brightness(.9)}
+.tint-yellow{filter:grayscale(1) sepia(1) hue-rotate(40deg) saturate(6) brightness(1.1)}
+.tint-blue{filter:grayscale(1) sepia(1) hue-rotate(200deg) saturate(5) brightness(.9)}
+.tint-black{filter:grayscale(1) brightness(.3)}
+.tint-white{filter:grayscale(.1) brightness(1.4)}
+.tint-silver{filter:grayscale(1) brightness(1)}
+
+#carCarousel .carousel-control-prev-icon,
+#carCarousel .carousel-control-next-icon{filter:invert(100%)}
+
+/* Sötét footer */
+.footer-dark{background:#000;color:#f0f0f0}
+.footer-link{color:#d0d0d0;text-decoration:none}
+.footer-link:hover{color:#fff;text-decoration:underline}
+.footer-logo{height:60px;filter:invert(100%) brightness(180%)}
